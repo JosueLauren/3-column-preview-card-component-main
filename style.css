@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca&display=swap');
+:root{
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray: hsl(0, 0%, 95%);
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  
+}
+
+.principal{
+  width:  100vw;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+
+.sections-cars{
+  width: 18%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 30px;
+  
+}
+
+.sections-cars h1 {
+  text-transform: uppercase;
+  color: var(--Very-light-gray);
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.sections-cars p {
+  color: var(--Transparent-white);
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.sections-cars a {
+  width: 60%;
+  text-decoration: none;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 12px;
+  background-color: var(--Transparent-white);
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.cars-sedans {
+  background-color: var(--Bright-orange);
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.cars-sedans a {
+  color: var(--Bright-orange);
+}
+
+.cars-sedans a:hover {
+  background-color: var(--Bright-orange);
+  color: var(--Transparent-white);
+  border: 2px solid var(--Transparent-white);
+}
+
+.cars-suvs{
+  background-color: var(--Dark-cyan);
+}
+
+.cars-suvs a {
+  color: var(--Dark-cyan);
+}
+
+.cars-suvs a:hover {
+  background-color: var(--Dark-cyan);
+  color: var(--Transparent-white);
+  border: 2px solid var(--Transparent-white);
+}
+
+.cars-luxury{
+  background-color: var(--Very-dark-cyan);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.cars-luxury a {
+  color: var(--Very-dark-cyan);
+}
+
+.cars-luxury a:hover {
+  background-color: var(--Very-dark-cyan);
+  color: var(--Transparent-white);
+  border: 2px solid var(--Transparent-white);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
