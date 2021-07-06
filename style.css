@@ -6,6 +6,7 @@
   --Transparent-white: hsla(0, 0%, 100%, 0.75);
   --Very-light-gray: hsl(0, 0%, 95%);
 }
+
 *{
   margin: 0px;
   padding: 0px;
@@ -104,5 +105,33 @@
   color: var(--Transparent-white);
   border: 2px solid var(--Transparent-white);
 }
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 800px) {
+    .principal {
+        width: 100%;
+        margin: 20px auto 20px;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .sections-cars {
+        width: 50%;
+    }
+
+    .cars-sedans {
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .cars-luxury {
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 0px;
+    }
+}
